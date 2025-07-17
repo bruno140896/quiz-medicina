@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: linear-gradient(to bottom, #2b0987, #4b32c3);
+}
+
+#start-screen {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.5s ease;
+}
+
+#start-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#start-button:hover, #start-button:focus {
+  background-color: #0056b3;
+}
+
+#start-button:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+#quiz-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.5s ease;
+}
+
+#options li {
+  list-style: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background: #eee;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#options li:hover, #options li:focus {
+  background: #d0e6ff;
+}
+
+#options li:focus {
+  outline: 2px solid #007bff;
+}
+
+#next-button {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#next-button:hover, #next-button:focus {
+  background-color: #45a049;
+}
+
+#next-button:focus {
+  outline: 2px solid #4CAF50;
+  outline-offset: 2px;
+}
+
+#timer {
+  font-weight: bold;
+  color: #ff0000;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#restart-button {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 1s ease;
+  pointer-events: none;
+}
+
+#restart-button.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#restart-button:hover, #restart-button:focus {
+  background-color: #0056b3;
+}
+
+#restart-button:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+#result {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  color: #2c3e50;
+}
+
+@media (max-width: 600px) {
+  #quiz-container, #start-screen {
+    max-width: 100%;
+    padding: 15px;
+  }
+  #next-button, #restart-button, #start-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  #result {
+    font-size: 30px;
+  }
+  #options li {
+    padding: 8px;
+  }
+}
